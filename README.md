@@ -33,18 +33,19 @@ The dataset is split into two files:
 ## Installation
 
 To get started with this project, clone the repository and install the required dependencies:
-
-```git clone https://github.com/tanishk-ou/census-income.git
-```cd census-income
-
+```
+git clone https://github.com/tanishk-ou/census-income.git
+cd census-income
+```
 Create a virtual environment:
-
-```python -m venv env
+```
+python -m venv env
 source env/bin/activate  # On Windows use `env\Scripts\activate` ```
-
+```
 Install the required packages:
-
-```pip install -r requirements.txt```
+```
+pip install -r requirements.txt
+```
 
 ## Usage
 ### Data Preprocessing
@@ -78,7 +79,8 @@ for col in categorical:
 combined_data[numerical] = ss.transform(combined_data[numerical])
 
 # Save the processed dataset
-joblib.dump(combined_data, 'data/dataset_pp.pkl')```
+joblib.dump(combined_data, 'data/dataset_pp.pkl')
+```
 
 ### Model Training
 All the training code is in the Jupyter notebook. Open and run the notebook to train your models:
@@ -91,7 +93,8 @@ This notebook will load the data, preprocess it, train the model, and save the t
 For making predictions, you can add a new section in your notebook to load the preprocessed data and trained model, then generate predictions.
 
 Example:
-```import joblib
+```
+import joblib
 from sklearn.ensemble import GradientBoostingClassifier
 
 # Load preprocessed data
@@ -101,7 +104,8 @@ data = joblib.load('data/dataset_pp.pkl')
 model = GradientBoostingClassifer()
 
 # Make predictions
-predictions = model.predict(data)```
+predictions = model.predict(data)
+```
 
 ## Project Structure
 census-income-project/
@@ -124,7 +128,8 @@ census-income-project/
 │
 ├── README.md
 ├── LICENSE
-└── requirements.txt```
+└── requirements.txt
+```
 
 ## Model Training
 To train the models, open and run the Jupyter notebook:
