@@ -35,7 +35,7 @@ The dataset is split into two files:
 To get started with this project, clone the repository and install the required dependencies:
 
 ```git clone https://github.com/tanishk-ou/census-income.git
-cd census-income```
+```cd census-income
 
 Create a virtual environment:
 
